@@ -1,0 +1,171 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+}
+
+body {
+   
+
+}
+
+html {
+   height: 100vh;
+}
+
+.container {
+   max-width: 450px;
+   text-align: center;
+   background-color: white;
+
+   overflow: hidden;
+   border-radius: 20px;
+   box-shadow: 1px 2px 13px #698dff;
+   z-index: 20;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50% , -50%);
+
+   animation: top-down infinite  3s  linear;
+
+}
+
+.page{
+   background-color: #d6e1ff;
+
+}
+
+.page .bg{
+   position: absolute;
+   left: 0;
+   width: 100%;
+   z-index: 1;
+}
+.page img {
+   max-width: 100%;
+}
+
+
+
+.container .text {
+   padding: 10px;
+}
+
+.container .text h2 {
+   text-transform: capitalize;
+}
+
+.container .text p {
+   margin: 10px auto;
+   color: #888e9e;
+   max-width: 300px;
+}
+
+.page .info {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   background-color: #f8f9fe;
+   width: fit-content;
+   margin: 10px auto;
+   border-radius: 20px;
+}
+
+.page .info img {
+   margin-right: 20px;
+}
+
+.page .info .dolar {
+   padding: 0 20px;
+   margin: 0 30px 0 0;
+}
+
+.page .info span {
+   display: block;
+
+}
+
+.page .info span:first-child {
+   font-weight: bold;
+   text-transform: capitalize;
+}
+
+.page .info span:last-child {
+   color: #888e9e;
+}
+
+.page .info a {
+   color: blue;
+   font-weight: bold;
+   text-decoration: none;
+   font-size: 1.3rem;
+   box-shadow: 1px 1px 2px #d4d4d4;
+   display: block;
+   padding: 9px;
+   border-radius: 20px;
+   background-image: linear-gradient(45deg, #ddd, transparent ,#ddd);
+}
+
+.page button {
+   display: block;
+   margin: 20px auto;
+   padding: 20px 60px;
+   width: 70%;
+   border-radius: 20px;
+   background: blue;
+   color: white;
+   font-weight: bold;
+   border: none;
+   box-shadow: 0 3px 10px #0000ff85;
+   font-size: 1.1rem;
+   cursor: pointer;
+   transition: .3s linear;
+
+}
+
+
+
+
+.page button:hover{
+   color: white;
+   background-color: #3b3bcaf5;
+   transform: translateY(4px);
+}
+
+
+.page .cancel {
+   text-decoration: none;
+   font-weight: bold;
+   text-transform: capitalize;
+   color: #8b8da4;
+   display: block;
+   padding: 20px;
+   font-size: 20px;
+   transition: .3s;
+}
+.page .cancel:hover{
+   color: #698dff;
+   transform: scale(1.1);
+}
+
+/* start animation */
+@keyframes  top-down {
+ 0% ,100% {
+
+  top:50%
+
+   }
+   50%{
+      top:45%
+   }
+
+}
+
+/* end animation */
+
+
+
